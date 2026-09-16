@@ -1,0 +1,17 @@
+{
+  "platform": "tistory",
+  "blog_name": "부동산·금융·투자·개발 레이더",
+  "blog_url": "https://insight35561.tistory.com",
+  "daily_publish": {
+    "minimum_target": 5,
+    "maximum": 10,
+    "minimum_quality_score": 9.0,
+    "force_minimum": false
+  },
+  "publishing": {
+    "mode": "queue_until_authenticated_adapter_ready",
+    "category_strategy": "single_best_category_by_search_intent",
+    "prevent_duplicate_intent": true,
+    "spread_publish_times": true
+  }
+}
