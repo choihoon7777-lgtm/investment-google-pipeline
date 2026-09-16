@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "minimum_score": 9.0,
+  "maximum_daily_publish": 10,
+  "quantity_is_not_target": true,
+  "dimensions": {
+    "google_policy_fit": 1,
+    "search_intent_completion": 1,
+    "original_added_value": 1,
+    "direct_calculation_analysis_comparison": 1,
+    "primary_sources_and_reference_date": 1,
+    "ymyl_trustworthiness": 1,
+    "factual_and_calculation_accuracy": 1,
+    "no_intent_cannibalization": 1,
+    "low_template_ai_feel": 1,
+    "practical_user_utility": 1
+  },
+  "hard_fail": [
+    "fabricated_source",
+    "unsupported_financial_guarantee",
+    "duplicate_search_intent",
+    "thin_rewrite",
+    "keyword_stuffing",
+    "missing_source_for_current_or_legal_claim",
+    "material_calculation_error"
+  ],
+  "required_content": [
+    "clear_search_intent",
+    "source_basis",
+    "original_analysis",
+    "practical_takeaway",
+    "uncertainty_or_limits_when_relevant"
+  ]
+}
