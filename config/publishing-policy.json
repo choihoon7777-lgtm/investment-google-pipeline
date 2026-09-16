@@ -1,0 +1,37 @@
+{
+  "blog": {
+    "name": "부동산·금융·투자·개발 레이더",
+    "url": "https://insight35561.tistory.com",
+    "platform": "tistory"
+  },
+  "daily_publish": {
+    "minimum_target": 5,
+    "maximum": 10,
+    "minimum_quality_score": 9.0,
+    "force_minimum": false,
+    "spread_publication_times": true
+  },
+  "category_policy": {
+    "selection_basis": ["search_intent", "primary_topic", "article_body"],
+    "single_primary_category": true,
+    "fallback": "hold_for_mapping",
+    "never_guess_unknown_tistory_category": true
+  },
+  "category_rules": [
+    {"internal":"auction_public_sale","label":"경매·공매","signals":["경매","공매","낙찰","매각물건명세서","권리분석","온비드"]},
+    {"internal":"finance","label":"금융","signals":["PF","브릿지론","본PF","DSR","LTV","대출","금리","채권"]},
+    {"internal":"land","label":"토지","signals":["토지","용도지역","건폐율","용적률","토지이음","보상","지목"]},
+    {"internal":"development","label":"개발","signals":["도시개발","재개발","재건축","공공택지","철도","산업단지","개발계획"]},
+    {"internal":"developer_business","label":"시행·사업성","signals":["시행","사업수지","분양수익","감보율","환지","공사비","사업성"]},
+    {"internal":"real_estate","label":"부동산","signals":["아파트","상가","오피스텔","주택","분양가","임대","월세"]},
+    {"internal":"corporate_investment","label":"기업·투자","signals":["M&A","인수","지분","자사주","기업자산","매각","투자"]}
+  ],
+  "prepublish_checks": [
+    "quality_score_gte_9",
+    "no_duplicate_intent",
+    "sources_verified",
+    "category_resolved_to_real_tistory_category",
+    "title_not_overclaiming",
+    "no_material_calculation_error"
+  ]
+}
